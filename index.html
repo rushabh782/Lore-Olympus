@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <link href="output.css" rel="stylesheet" />
+    <title>Lore Olympus Webtoon</title>
+    <style>
+      /* Additional styles for navigation hover effect */
+      nav a {
+        transition: color 0.3s, text-shadow 0.3s;
+      }
+      nav a:hover {
+        color: #ffeb3b; /* Bright color on hover */
+        text-shadow: 0 0 5px rgba(255, 235, 59, 0.7); /* Glow effect */
+      }
+
+      /* Fixed image size for character images */
+      .character-image {
+        width: 100%;
+        height: 200px; /* Fixed height for consistency */
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1
+          class="text-white text-xl font-bold cursor-pointer"
+          onclick="window.location.reload();"
+        >
+          Lore Olympus
+        </h1>
+        <ul class="flex space-x-4">
+          <li><a href="#characters" class="text-white">Characters</a></li>
+          <li><a href="#manhwa-carousel" class="text-white">Manhwas</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header
+      class="relative h-96 bg-cover bg-center"
+      style="background-image: url('manhwabackground.jpg')"
+    >
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div class="relative flex justify-center items-center h-full">
+        <h2 class="text-white text-4xl font-bold animate-pulse">
+          Jaw Dropping Scenes on Media
+        </h2>
+      </div>
+    </header>
+
+    <!-- Manhwa Section -->
+    <section id="manhwa-carousel" class="p-8">
+      <h2 class="text-3xl font-bold text-center mb-6 text-blue-600">
+        Supernatural Manhwas
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Manhwa 1 -->
+        <div
+          class="border rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-lg"
+        >
+          <h3 class="text-lg font-semibold p-4">Leviathan</h3>
+          <img
+            src="images/leviathan.jpg"
+            alt="Leviathan"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <p><strong>Writer:</strong> Gyeong-tak LEE, Mi-young NOH</p>
+            <p><strong>Genre:</strong> Sci-Fi, Horror, Action</p>
+            <p><strong>Release Years:</strong> 2018-2022</p>
+            <p>
+              The protagonist, Bota, and his family live on a small boat because
+              the water has risen and captured the dry lands. They search for
+              food and resources from underwater cities...
+            </p>
+          </div>
+        </div>
+        <!-- Manhwa 2 -->
+        <div
+          class="border rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-lg"
+        >
+          <h3 class="text-lg font-semibold p-4">Tower of God</h3>
+          <img
+            src="images/TowerOfGod.jpg"
+            alt="Manhwa 2"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <p><strong>Writer:</strong> SIU</p>
+            <p><strong>Genre:</strong> Action, Fantasy</p>
+            <p><strong>Release Years:</strong> 2010-2019</p>
+            <p>
+              The Tower of God revolves around Twenty-Fifth Baam, who spends
+              most of his early life stuck beneath the titular tower...
+            </p>
+          </div>
+        </div>
+        <!-- Manhwa 3 -->
+        <div
+          class="border rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-lg"
+        >
+          <h3 class="text-lg font-semibold p-4">Leveling Up with the Gods</h3>
+          <img
+            src="images/LevelingGods.jpg"
+            alt="Manhwa 3"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <p><strong>Writer:</strong> Ohyeon, B.Ain</p>
+            <p><strong>Genre:</strong> Fantasy, Action</p>
+            <p><strong>Release Years:</strong> 2021 -?</p>
+            <p>
+              Leveling Up with the Gods is undoubtedly one of the best
+              supernatural manhwa...
+            </p>
+          </div>
+        </div>
+        <!-- Manhwa 4 -->
+        <div
+          class="border rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-lg"
+        >
+          <h3 class="text-lg font-semibold p-4">Existence</h3>
+          <img
+            src="images/Existence.jpg"
+            alt="Manhwa 4"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <p><strong>Writer:</strong> Gwang-Jin, Kim Kyungjun</p>
+            <p><strong>Genre:</strong> Action, Drama</p>
+            <p><strong>Release Years:</strong> 2022 -?</p>
+            <p>
+              Existence follows the central character Lee Jan-In, who has
+              experienced countless lives...
+            </p>
+          </div>
+        </div>
+        <!-- Manhwa 5 -->
+        <div
+          class="border rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-lg"
+        >
+          <h3 class="text-lg font-semibold p-4">The Breaker</h3>
+          <img
+            src="images/Breaker.jpg"
+            alt="Manhwa 5"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <p><strong>Writer:</strong> Geuk-Jin Jeon, Jin-Hwan Park</p>
+            <p><strong>Genre:</strong> Action</p>
+            <p><strong>Release Years:</strong> 2007-2010</p>
+            <p>
+              The Breaker follows the central character Lee Shi-Woon, who after
+              witnessing his teacher’s abilities...
+            </p>
+          </div>
+        </div>
+        <!-- Manhwa 6 -->
+        <div
+          class="border rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-lg"
+        >
+          <h3 class="text-lg font-semibold p-4">The First Hunter</h3>
+          <img
+            src="images/TheFirstHunter.jpg"
+            alt="Manhwa 6"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <p><strong>Writer:</strong> D-Dart, Chanuk Jeon</p>
+            <p><strong>Genre:</strong> Action, Fantasy</p>
+            <p><strong>Release Years:</strong> 2019-2021</p>
+            <p>
+              The First Hunter is an apocalyptic supernatural manhwa that
+              follows the character Kim Taehoon...
+            </p>
+          </div>
+        </div>
+        <!-- Add more manhwa entries as needed -->
+      </div>
+    </section>
+
+    <!-- Characters Section -->
+    <section id="characters" class="p-8">
+      <h2 class="text-3xl font-bold text-center mb-6 text-blue-600">
+        Characters
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Character 1 -->
+        <div class="border rounded-lg overflow-hidden">
+          <h3 class="text-lg font-semibold p-4">Zeus</h3>
+          <img src="images/Zeus.webp" alt="Zeus" class="character-image" />
+          <div class="p-4">
+            <p>
+              Zeus, the king of the gods, is depicted as a yellow-skinned man
+              with long, straight hair. Known for his promiscuity and egotism,
+              Zeus’ actions often brought chaos to Olympus. A member of the Six
+              Realms of Lies, he has intimate relationships with many
+              characters, including his brothers Hades and Poseidon, and many
+              lovers. His character provides a lens through which to examine
+              issues of power and corruption.
+            </p>
+          </div>
+        </div>
+        <!-- Character 2 -->
+        <div class="border rounded-lg overflow-hidden">
+          <h3 class="text-lg font-semibold p-4">Hades</h3>
+          <img src="images/Hades.webp" alt="Hades" class="character-image" />
+          <div class="p-4">
+            <p>
+              Hades, the god of the underworld, is often portrayed as a brooding
+              figure with a dark, imposing presence. His character explores
+              themes of death, loss, and the afterlife, often depicted as stern
+              yet fair.
+            </p>
+          </div>
+        </div>
+        <!-- Character 3 -->
+        <div class="border rounded-lg overflow-hidden">
+          <h3 class="text-lg font-semibold p-4">Persephone</h3>
+          <img
+            src="images/Persephone.webp"
+            alt="Persephone"
+            class="character-image"
+          />
+          <div class="p-4">
+            <p>
+              Persephone, the goddess of spring, represents duality—both life
+              and death. Her journey from the surface to the underworld and back
+              highlights her growth and strength, making her a symbol of
+              resilience.
+            </p>
+          </div>
+        </div>
+        <!-- Add more character entries as needed -->
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="read-more" class="text-center p-8">
+      <a
+        href="link-to-webtoon"
+        class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition"
+        >Read More</a
+      >
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
